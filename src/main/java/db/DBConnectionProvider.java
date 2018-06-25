@@ -31,7 +31,7 @@ public class DBConnectionProvider {
 
     private void loadProperties() throws IOException {
         Properties properties = new Properties();
-        properties.load(new FileInputStream("C:\\Users\\MIC-8\\IdeaProjects\\client_server\\src\\main\\resources\\config.properties"));
+        properties.load(new FileInputStream("C:\\Users\\client_server\\src\\main\\resources\\config.properties"));
 //        properties.load(new FileInputStream("../resources/config.properties"));
         driverName = properties.getProperty("db.driver.name");
         dbUrl = properties.getProperty("db.url");
